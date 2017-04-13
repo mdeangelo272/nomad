@@ -414,6 +414,7 @@ func (d *DockerDriver) Validate(config map[string]interface{}) error {
 func (d *DockerDriver) Abilities() DriverAbilities {
 	return DriverAbilities{
 		SendSignals: true,
+		Exec:        true,
 	}
 }
 
